@@ -1,79 +1,123 @@
-.container{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 100px;
+.home-body {
+    display: flex;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(57, 8, 110);
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(213, 212, 212);
 }
 
 h1 {
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
+    color: rgb(57, 8, 110);
+    font-weight: bolder;
+    text-shadow: 1px 1px 10px rgb(57, 8, 110);
+    font-size: 30px;
+    text-align: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 30px;
-  border-radius: 10px;
-  background-color: #2e2d4e;
-  max-width: 50%;
-  width: 400px;
-  margin-bottom: 20px;
+.user-img {
+    width: 100px;
+    height: 100px;
+}
 
-  & button {
+.del-img {
+    float: right;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    background-color: rgb(213, 212, 212);
+    width: 470px;
+    height: 450px;
+}
+
+.form-btn {
     border-radius: 30px;
-    background-color: #8b8ae1;
-    height: 40px;
+    background-color: rgb(57, 8, 110);
+    height: 50px;
+    width: 430px;
     border: none;
     font-weight: bold;
     cursor: pointer;
     color: #fff;
-  }
+    text-shadow: 1px 1px 10px rgb(57, 8, 110);
+}
 
-  & button:hover {
+.form-btn:hover {
     opacity: 0.8;
-  }
+}
 
-  & input {
+.form-input {
     border: 1px solid #48456c;
-    border-radius: 30px;
+    border-radius: 20px;
     height: 40px;
-    background-color: #363653;
-    color: #fff;
+    background-color: rgb(89, 88, 90);
+    color: #ffffff;
+    width: 420px;
     font-size: 16px;
     padding-left: 10px;
     outline: none;
-  }
 }
 
-.card{
-  display: flex;
-  justify-content: space-between;
-  background-color: #2e2d4e;
-  margin: 10px;
-  padding: 10px;
-  width: 400px;
-  border-radius: 10px;
 
-  & p {
-    color: #fff;
-    font-weight: bold;
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(82, 17, 151);
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
 
-    & span {
-      font-weight: normal;
+    & p {
+        margin-left: 15px;
+        color: #fff;
+        font-weight: bold;
+
+        & span {
+            font-weight: normal;
+        }
     }
-  }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+    }
 
 
-  & button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
 
-  & button:hover { 
-    opacity: 0.5;
-  }
+    & button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    & button:hover {
+        opacity: 0.5;
+    }
+}
+
+.form-input::placeholder {
+    color: rgb(187, 185, 185);
 }
